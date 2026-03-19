@@ -1,0 +1,63 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    background-color: rgb(249 250 251); /* gray-50 */
+    color: rgb(3 7 18); /* gray-950 */
+  }
+
+  html.dark body {
+    background-color: rgb(17 24 39); /* gray-900 */
+    color: rgb(248 250 252); /* gray-50 */
+  }
+}
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+
+/* Hide scrollbar but keep scroll functionality */
+/* .hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --bg-color: #f9fafb;
+}
+
+html.dark {
+  --bg-color: #111827;
+} */
+
+
+/* #education .vertical-timeline {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#education .vertical-timeline-element-content {
+  width: 44% !important;
+}
+
+#education .vertical-timeline-element-date {
+  padding: 0 2rem !important;
+} */
