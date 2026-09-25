@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import twinMind from "@/public/TwinMind.png";
 import aiModel_Safety from "@/public/AIModel_Safety.png";
 import eCommerce from "@/public/E-Commerce_DE.png";
 import smartInfra from "@/public/smartInfra.png";
@@ -78,10 +79,25 @@ export const experiencesData = [
     title: "Full Stack Developer - AI",
     location: "California, USA",    
     description:
-      "Built an AI-powered assistant platform that automatically classifies user requests and routes them to the most suitable AI model, enabling intelligent and scalable handling of community support queries.",
+       "Built and owned a production AI assistant platform with tenant-isolated RAG, agentic workflows, multi-provider LLM routing, evaluation, observability, and safety guardrails for client-specific enterprise use cases.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2025 – Present",
-    tags: ["FastAPI", "HuggingFace", "LLMs", "RAF", "Pinecone", "PostgreSQL", "Docker", "AWS"],
+    tags: [
+      "Python",
+      "FastAPI",
+      "LangGraph",
+      "LangChain",
+      "Pinecone",
+      "BART-MNLI",
+      "RAG",
+      "LLM Agents",
+      "PostgreSQL",
+      "Prometheus",
+      "Grafana",
+      "Docker",
+      "AWS",
+      "AI Safety"
+    ],
   },
   {
     company: "University at Buffalo",
@@ -92,7 +108,24 @@ export const experiencesData = [
       Also, supported research initiatives involving OCR pipelines and AI-driven document intelligence systems.`,
     icon: React.createElement(CgWorkAlt),
     date: "Sep 2024 – Jun 2025",
-    tags: ["Python","Data Structure and Algorithm", "Operating Systems", "Machine Learning", "PyTorch", "Deep Learning", "Computer Vision", "NLP"],
+    tags: [
+      "Python",
+      "PyTorch",
+      "Deep Learning",
+      "Computer Vision",
+      "OCR",
+      "NLP",
+      "Transformers",
+      "OpenCV",
+      "mT5",
+      "NLLB",
+      "Coqui TTS",
+      "Apache Spark",
+      "Azure",
+      "Data Structure and Algorithm", 
+      "Operating Systems",
+      "Networking",
+    ],
   },
   {
     company: "Wipro Ltd.",
@@ -105,18 +138,53 @@ export const experiencesData = [
       Developed backend services and automated testing systems for large-scale platforms, improving reliability, test coverage, and deployment efficiency.`,
     icon: React.createElement(CgWorkAlt),
     date: "Aug 2019 – Aug 2022",
-    tags: ["Python", "Azure Cognitive Services", "Azure SQL", "Azure Cosmos DB", "Azure Blob Storage", "Azure Functions", "Flask", "Regex", "NLP", "Data Pipelines", "REST APIs", "Selenium", "Cucumber", "Git", "Postman", "DevOps"],
+    tags: [
+      "Python",
+      "Java",
+      "FastAPI",
+      "Azure Cognitive Search",
+      "Azure Functions",
+      "Azure SQL",
+      "Azure Data Factory",
+      "ADLS",
+      "Databricks",
+      "PySpark",
+      "REST APIs",
+      "Selenium",
+      "Cucumber",
+      "Jenkins",
+      "Docker",
+      "Azure DevOps"
+    ],
   },
   
 ] as const;
 
 export const projectsData = [
   {
+    title: "Live Meeting Copilot",
+    description:
+      "Built a real-time meeting copilot that transcribes live conversations using Groq Whisper Large V3 and generates context-aware responses with Llama 3.3, maintaining rolling conversation context and delivering answers in about 30 seconds.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "WebRTC",
+      "Groq Whisper Large V3",
+      "Llama 3.3",
+      "Groq",
+      "Speech-to-Text",
+      "LLMs"
+    ],
+    imageUrl: twinMind,
+    githubUrl: "https://github.com/shreya7code/twinmind-live"
+  },
+  {
     title: "AgenticAI Model Safety Evaluation Platform",
     description:
       "The platform automatically stress-tests LLM applications for hallucinations, prompt injections, jailbreaks, bias, and data leakage. The system uses automated red-team agents, LLM-as-judge scoring, and regression detection to evaluate model quality across versions, with a FastAPI backend and a Next.js dashboard for monitoring results.",
     tags: ["Python", "LangGraph", "PostgreSQL", "pgvector", "Redis", "TypeScript", "Grafana"],
     imageUrl: aiModel_Safety,
+    githubUrl: "https://github.com/shreya7code/Anomaly_Detection-Smart_Infra_Monitor"
   },
   {
     title: "Olist E-Commerce Analytics",
@@ -124,6 +192,7 @@ export const projectsData = [
       "Built an end-to-end data pipeline using the Brazilian Olist e-commerce dataset to ingest, process, and transform large-scale transactional data into structured analytical datasets for business insights and reporting.",
     tags: ["Azure Data Factory", "Azure Databricks", "PySpark", "Azure Data Lake Gen2", "Azure Synapse SQL"],
     imageUrl: eCommerce,
+    githubUrl: "https://github.com/shreya7code/BigDataProject-AzureDL-Databricks-Tableau"
   },
   {
     title: "Smart Infra Monitor",
@@ -131,6 +200,7 @@ export const projectsData = [
       "Built a real-time infrastructure monitoring system that simulates machine metrics, streams them through a data pipeline, detects anomalies using machine learning, and visualizes system health through interactive dashboards.",
     tags: ["FastAPI", "Apache Kafka", "InfluxDB", "Docker", "AWS"],
     imageUrl: smartInfra,
+    githubUrl: "https://github.com/shreya7code/Anomaly_Detection-Smart_Infra_Monitor"
   },
   {
     title: "Gesture-to-Text",
@@ -138,6 +208,7 @@ export const projectsData = [
       "Built a deep learning system that recognizes hand gestures and converts them into text, enabling real-time gesture-based communication through computer vision and neural network models.",
     tags: ["PyTorch", "OpenCV", "CNN", "Neural Networks", "LSTM", "Deep Learning","Streamlit"],
     imageUrl: asl,
+    githubUrl: "https://github.com/shreya7code/Sign-Language-Interpretation-Deep-Learning-Model"
   },
   {
     title: "CardioVigilant",
@@ -145,6 +216,7 @@ export const projectsData = [
       "Built a real-time infrastructure monitoring system that simulates machine metrics, streams them through a data pipeline, detects anomalies using machine learning, and visualizes system health through interactive dashboards.",
     tags: ["Python", "Scikit-learn", "XGBoost", "Logistic Regression", "Random Forest", "Flask", "Pandas", "NumPy"],
     imageUrl: cardioVigi,
+    githubUrl: "https://github.com/shreya7code/CardioVigilant-ML"
   },
 ] as const;
 
