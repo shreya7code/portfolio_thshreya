@@ -75,7 +75,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    company: "Saayam for All",
+    company: "Stealth Startup",
     title: "Full Stack Developer - AI",
     location: "California, USA",    
     description:
